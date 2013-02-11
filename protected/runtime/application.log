@@ -1,0 +1,864 @@
+2012/12/03 20:59:01 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[HY000]: General error: 904 OCIStmtExecute: ORA-00904: "EXPIRE": invalid identifier
+ (ext\pdo_oci\oci_statement.c:148). The SQL statement executed was: DELETE FROM "YiiSession" WHERE expire<:expire. Bound with :expire=1354564741.
+in C:\xampp\htdocs\yii\testapp\protected\views\site\searchbb.php (33)
+in C:\xampp\htdocs\yii\testapp\protected\controllers\SiteController.php (177)
+in C:\xampp\htdocs\yii\testapp\index.php (13)
+2012/12/03 20:59:01 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[HY000]: General error: 955 OCIStmtExecute: ORA-00955: name is already used by an existing object
+ (ext\pdo_oci\oci_statement.c:148). The SQL statement executed was: CREATE TABLE "YiiSession" (
+	"id" CHAR(32) PRIMARY KEY,
+	"expire" NUMBER(10),
+	"data" BLOB
+).
+in C:\xampp\htdocs\yii\testapp\protected\views\site\searchbb.php (33)
+in C:\xampp\htdocs\yii\testapp\protected\controllers\SiteController.php (177)
+in C:\xampp\htdocs\yii\testapp\index.php (13)
+2012/12/03 20:59:01 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[HY000]: General error: 955 OCIStmtExecute: ORA-00955: name is already used by an existing object
+ (ext\pdo_oci\oci_statement.c:148). The SQL statement executed was: CREATE TABLE "YiiSession" (
+	"id" CHAR(32) PRIMARY KEY,
+	"expire" NUMBER(10),
+	"data" BLOB
+)' in C:\xampp\htdocs\yii\framework\db\CDbCommand.php:354
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\CDbCommand.php(1251): CDbCommand->execute()
+#1 C:\xampp\htdocs\yii\framework\web\CDbHttpSession.php(148): CDbCommand->createTable('YiiSession', Array)
+#2 C:\xampp\htdocs\yii\framework\web\CDbHttpSession.php(193): CDbHttpSession->createSessionTable(Object(CDbConnection), 'YiiSession')
+#3 [internal function]: CDbHttpSession->openSession('C:\xampp\tmp', 'PHPSESSID')
+#4 C:\xampp\htdocs\yii\framework\web\CHttpSession.php(115): session_start()
+#5 C:\xampp\htdocs\yii\framework\web\CHttpSession.php(89): CHttpSession->open()
+#6 C:\xampp\htdocs\yii\framework\base\CModule.php(388): CHttpSession->init()
+#7 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(202): CModule->getComponent('session')
+#8 C:\xampp\htdocs\yii\framework\web\auth\CWebUser.php(194): CWebApplication->getSession()
+#9 C:\xampp\htdocs\yii\framework\base\CModule.php(388): CWebUser->init()
+#10 C:\xampp\htdocs\yii\framework\base\CModule.php(104): CModule->getComponent('user')
+#11 C:\xampp\htdocs\yii\testapp\protected\views\site\searchbb.php(33): CModule->__get('user')
+#12 C:\xampp\htdocs\yii\framework\web\CBaseController.php(127): require('C:\xampp\htdocs...')
+#13 C:\xampp\htdocs\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#14 C:\xampp\htdocs\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#15 C:\xampp\htdocs\yii\framework\web\CController.php(783): CController->renderPartial('searchbb', Array, true)
+#16 C:\xampp\htdocs\yii\testapp\protected\controllers\SiteController.php(177): CController->render('searchbb', Array)
+#17 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionSearchbb()
+#18 C:\xampp\htdocs\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#19 C:\xampp\htdocs\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#20 C:\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#21 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(283): CController->run('searchbb')
+#22 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/searchbb')
+#23 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#24 C:\xampp\htdocs\yii\testapp\index.php(13): CApplication->run()
+#25 {main}
+REQUEST_URI=/yii/testapp/index.php?r=site/searchbb
+---
+2012/12/03 21:01:14 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[HY000]: General error: 904 OCIStmtExecute: ORA-00904: "EXPIRE": invalid identifier
+ (ext\pdo_oci\oci_statement.c:148). The SQL statement executed was: DELETE FROM "YiiSession" WHERE expire<:expire. Bound with :expire=1354564874.
+in C:\xampp\htdocs\yii\testapp\protected\views\site\searchbb.php (33)
+in C:\xampp\htdocs\yii\testapp\protected\controllers\SiteController.php (177)
+in C:\xampp\htdocs\yii\testapp\index.php (13)
+2012/12/03 21:01:14 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[HY000]: General error: 955 OCIStmtExecute: ORA-00955: name is already used by an existing object
+ (ext\pdo_oci\oci_statement.c:148). The SQL statement executed was: CREATE TABLE "YiiSession" (
+	"id" CHAR(32) PRIMARY KEY,
+	"expire" NUMBER(10),
+	"data" BLOB
+).
+in C:\xampp\htdocs\yii\testapp\protected\views\site\searchbb.php (33)
+in C:\xampp\htdocs\yii\testapp\protected\controllers\SiteController.php (177)
+in C:\xampp\htdocs\yii\testapp\index.php (13)
+2012/12/03 21:01:14 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[HY000]: General error: 955 OCIStmtExecute: ORA-00955: name is already used by an existing object
+ (ext\pdo_oci\oci_statement.c:148). The SQL statement executed was: CREATE TABLE "YiiSession" (
+	"id" CHAR(32) PRIMARY KEY,
+	"expire" NUMBER(10),
+	"data" BLOB
+)' in C:\xampp\htdocs\yii\framework\db\CDbCommand.php:354
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\CDbCommand.php(1251): CDbCommand->execute()
+#1 C:\xampp\htdocs\yii\framework\web\CDbHttpSession.php(148): CDbCommand->createTable('YiiSession', Array)
+#2 C:\xampp\htdocs\yii\framework\web\CDbHttpSession.php(193): CDbHttpSession->createSessionTable(Object(CDbConnection), 'YiiSession')
+#3 [internal function]: CDbHttpSession->openSession('C:\xampp\tmp', 'PHPSESSID')
+#4 C:\xampp\htdocs\yii\framework\web\CHttpSession.php(115): session_start()
+#5 C:\xampp\htdocs\yii\framework\web\CHttpSession.php(89): CHttpSession->open()
+#6 C:\xampp\htdocs\yii\framework\base\CModule.php(388): CHttpSession->init()
+#7 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(202): CModule->getComponent('session')
+#8 C:\xampp\htdocs\yii\framework\web\auth\CWebUser.php(194): CWebApplication->getSession()
+#9 C:\xampp\htdocs\yii\framework\base\CModule.php(388): CWebUser->init()
+#10 C:\xampp\htdocs\yii\framework\base\CModule.php(104): CModule->getComponent('user')
+#11 C:\xampp\htdocs\yii\testapp\protected\views\site\searchbb.php(33): CModule->__get('user')
+#12 C:\xampp\htdocs\yii\framework\web\CBaseController.php(127): require('C:\xampp\htdocs...')
+#13 C:\xampp\htdocs\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#14 C:\xampp\htdocs\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#15 C:\xampp\htdocs\yii\framework\web\CController.php(783): CController->renderPartial('searchbb', Array, true)
+#16 C:\xampp\htdocs\yii\testapp\protected\controllers\SiteController.php(177): CController->render('searchbb', Array)
+#17 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionSearchbb()
+#18 C:\xampp\htdocs\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#19 C:\xampp\htdocs\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#20 C:\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#21 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(283): CController->run('searchbb')
+#22 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/searchbb')
+#23 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#24 C:\xampp\htdocs\yii\testapp\index.php(13): CApplication->run()
+#25 {main}
+REQUEST_URI=/yii/testapp/index.php?r=site/searchbb
+---
+2012/12/06 13:03:10 [error] [php] Undefined index: code (C:\xampp\htdocs\yii\testapp\protected\controllers\SiteController.php:312)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(287): SiteController->runAction()
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(283): SiteController->run()
+#3 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#4 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#5 C:\xampp\htdocs\yii\testapp\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/testapp/index.php?r=site/apply
+in C:\xampp\htdocs\yii\testapp\protected\controllers\SiteController.php (312)
+in C:\xampp\htdocs\yii\testapp\index.php (13)
+2012/12/06 13:03:56 [error] [php] Undefined index: code (C:\xampp\htdocs\yii\testapp\protected\controllers\SiteController.php:312)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(287): SiteController->runAction()
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(283): SiteController->run()
+#3 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#4 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#5 C:\xampp\htdocs\yii\testapp\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/testapp/index.php?r=site/apply
+in C:\xampp\htdocs\yii\testapp\protected\controllers\SiteController.php (312)
+in C:\xampp\htdocs\yii\testapp\index.php (13)
+2012/12/06 13:06:08 [error] [php] Undefined index: code2 (C:\xampp\htdocs\yii\testapp\protected\controllers\SiteController.php:312)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(287): SiteController->runAction()
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(283): SiteController->run()
+#3 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#4 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#5 C:\xampp\htdocs\yii\testapp\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/testapp/index.php?r=site/apply
+in C:\xampp\htdocs\yii\testapp\protected\controllers\SiteController.php (312)
+in C:\xampp\htdocs\yii\testapp\index.php (13)
+2012/12/06 13:06:25 [error] [php] Undefined index: code2 (C:\xampp\htdocs\yii\testapp\protected\controllers\SiteController.php:312)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(287): SiteController->runAction()
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(283): SiteController->run()
+#3 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#4 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#5 C:\xampp\htdocs\yii\testapp\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/testapp/index.php?r=site/apply
+in C:\xampp\htdocs\yii\testapp\protected\controllers\SiteController.php (312)
+in C:\xampp\htdocs\yii\testapp\index.php (13)
+2013/01/15 11:39:27 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[HY000]: General error: 904 OCIStmtExecute: ORA-00904: "D"."OWNER_REF": invalid identifier
+ (ext\pdo_oci\oci_statement.c:148). The SQL statement executed was: select c.uio_id As id, c.calocc_occurrence_code As year, c.fes_uins_instance_code As code, c.long_description As title, c.fes_moa_code As type, c.sp_can_enrol As enrol, c.sp_can_apply As apply, c.sp_can_enquire As enquire, c.ucas As ucas2, e.fes_source_finance As ucas, llat.learning_aim_type_desc As qual, to_char(c.qual_start_date, 'DD MON YYYY') As sdate, to_char(c.qual_end_date, 'DD MON YYYY') As edate, to_char(c.fes_start_time,'HH24:MI')  As stime, to_char(c.fes_end_time,'HH24:MI')  As etime, c.fes_no_of_hours As hours, c.fes_day_of_week As days, c.fes_no_of_weeks As weeks, c.prosp_user_1 As content, c.prosp_user_10 As type2, c.prosp_user_2 As entry_req, a.fes_long_description || ' - ' || a.town || ' ' || a.uk_post_code_pt1 || ' ' || a.uk_post_code_pt2 As location, a.uk_post_code_pt1 || ' ' || a.uk_post_code_pt2 As postcode, sum(b.amount_payable) As fees from locations a, unit_instance_occurrences c, unit_instances e , uio_qual_aims uqa, fefc_qual_aims fqa, lad_learning_aim_types llat , fee_values b where a.location_code (+) = c.sloc_location_code and e.fes_unit_instance_code = c.fes_uins_instance_code and c.uio_id = b.uio_id (+) and (e.ui_id = d.owner_ref (+) ) and uqa.funding_year = fqa.funding_year (+) and uqa.qual_code = fqa.qual_code (+) and fqa.qual_type = llat.learning_aim_type_code (+) and c.calocc_occurrence_code = uqa.CALOCC_CODE (+) and c.fes_uins_instance_code = uqa.unit_instance_code (+) and c.uio_id = :uio_id GROUP BY c.uio_id,c.calocc_occurrence_code,c.fes_uins_instance_code,c.long_description,c.fes_moa_code,c.sp_can_enrol,c.sp_can_apply,c.sp_can_enquire,c.ucas,e.fes_source_finance,llat.learning_aim_type_desc,c.qual_start_date, c.qual_end_date,c.fes_start_time,c.fes_end_time,c.fes_day_of_week,c.fes_no_of_hours,c.fes_no_of_weeks,c.prosp_user_1,c.prosp_user_10,c.prosp_user_2,a.fes_long_description || ' - ' || a.town || ' ' || a.uk_post_code_pt1 || ' ' || a.uk_post_code_pt2,a.uk_post_code_pt1 || ' ' || a.uk_post_code_pt2 . Bound with :uio_id='284740'.
+in C:\xampp\htdocs\yii\testapp\protected\models\Course.php (247)
+in C:\xampp\htdocs\yii\testapp\protected\views\site\crsview.php (24)
+in C:\xampp\htdocs\yii\testapp\protected\controllers\SiteController.php (262)
+2013/01/15 11:39:27 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[HY000]: General error: 904 OCIStmtExecute: ORA-00904: "D"."OWNER_REF": invalid identifier
+ (ext\pdo_oci\oci_statement.c:148). The SQL statement executed was: select c.uio_id As id, c.calocc_occurrence_code As year, c.fes_uins_instance_code As code, c.long_description As title, c.fes_moa_code As type, c.sp_can_enrol As enrol, c.sp_can_apply As apply, c.sp_can_enquire As enquire, c.ucas As ucas2, e.fes_source_finance As ucas, llat.learning_aim_type_desc As qual, to_char(c.qual_start_date, 'DD MON YYYY') As sdate, to_char(c.qual_end_date, 'DD MON YYYY') As edate, to_char(c.fes_start_time,'HH24:MI')  As stime, to_char(c.fes_end_time,'HH24:MI')  As etime, c.fes_no_of_hours As hours, c.fes_day_of_week As days, c.fes_no_of_weeks As weeks, c.prosp_user_1 As content, c.prosp_user_10 As type2, c.prosp_user_2 As entry_req, a.fes_long_description || ' - ' || a.town || ' ' || a.uk_post_code_pt1 || ' ' || a.uk_post_code_pt2 As location, a.uk_post_code_pt1 || ' ' || a.uk_post_code_pt2 As postcode, sum(b.amount_payable) As fees from locations a, unit_instance_occurrences c, unit_instances e , uio_qual_aims uqa, fefc_qual_aims fqa, lad_learning_aim_types llat , fee_values b where a.location_code (+) = c.sloc_location_code and e.fes_unit_instance_code = c.fes_uins_instance_code and c.uio_id = b.uio_id (+) and (e.ui_id = d.owner_ref (+) ) and uqa.funding_year = fqa.funding_year (+) and uqa.qual_code = fqa.qual_code (+) and fqa.qual_type = llat.learning_aim_type_code (+) and c.calocc_occurrence_code = uqa.CALOCC_CODE (+) and c.fes_uins_instance_code = uqa.unit_instance_code (+) and c.uio_id = :uio_id GROUP BY c.uio_id,c.calocc_occurrence_code,c.fes_uins_instance_code,c.long_description,c.fes_moa_code,c.sp_can_enrol,c.sp_can_apply,c.sp_can_enquire,c.ucas,e.fes_source_finance,llat.learning_aim_type_desc,c.qual_start_date, c.qual_end_date,c.fes_start_time,c.fes_end_time,c.fes_day_of_week,c.fes_no_of_hours,c.fes_no_of_weeks,c.prosp_user_1,c.prosp_user_10,c.prosp_user_2,a.fes_long_description || ' - ' || a.town || ' ' || a.uk_post_code_pt1 || ' ' || a.uk_post_code_pt2,a.uk_post_code_pt1 || ' ' || a.uk_post_code_pt2 . Bound with :uio_id='284740'' in C:\xampp\htdocs\yii\framework\db\CDbCommand.php:528
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\CDbCommand.php(408): CDbCommand->queryInternal('fetch', Array, Array)
+#1 C:\xampp\htdocs\yii\testapp\protected\models\Course.php(247): CDbCommand->queryRow()
+#2 C:\xampp\htdocs\yii\testapp\protected\views\site\crsview.php(24): Course->findCourseById2('284740')
+#3 C:\xampp\htdocs\yii\framework\web\CBaseController.php(127): require('C:\xampp\htdocs...')
+#4 C:\xampp\htdocs\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(783): CController->renderPartial('crsview', Array, true)
+#7 C:\xampp\htdocs\yii\testapp\protected\controllers\SiteController.php(262): CController->render('crsview', Array)
+#8 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionCrsview()
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(283): CController->run('crsview')
+#13 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/crsview')
+#14 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\yii\testapp\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/yii/testapp/index.php?r=site/crsview&id=284740&qualification=0016&year=12%2F13&ajax=crs3-grid&page=1&v=q
+HTTP_REFERER=http://localhost/yii/testapp/index.php?r=site%2Fsearchq&v=s&year=12%2F13&qualification=1452&yt0=+Go%21+
+---
+2013/01/15 12:34:11 [error] [php] Undefined index: location (C:\xampp\htdocs\yii\testapp\protected\controllers\SiteController.php:209)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(287): SiteController->runAction()
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(283): SiteController->run()
+#3 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#4 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#5 C:\xampp\htdocs\yii\testapp\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/testapp/index.php?r=site%2Fsearcha&v=a&code=&title=&subject=empty&qualification=empty&year1=&year2=&sdateop=0&sdate=&stimeop=0&shour=&sminute=&day=empty&submita=++++Search++++
+in C:\xampp\htdocs\yii\testapp\protected\controllers\SiteController.php (209)
+in C:\xampp\htdocs\yii\testapp\index.php (13)
+2013/01/15 12:39:27 [error] [exception.CException] exception 'CException' with message 'Property "SearchFormA.location" is not defined.' in C:\xampp\htdocs\yii\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\helpers\CHtml.php(2158): CComponent->__get('location')
+#1 C:\xampp\htdocs\yii\framework\web\helpers\CHtml.php(1515): CHtml::resolveValue(Object(SearchFormA), 'location')
+#2 C:\xampp\htdocs\yii\framework\web\helpers\CHtml.php(1567): CHtml::activeDropDownList(Object(SearchFormA), 'location', Array, Array)
+#3 C:\xampp\htdocs\yii\framework\web\widgets\CActiveForm.php(780): CHtml::activeListBox(Object(SearchFormA), 'location', Array, Array)
+#4 C:\xampp\htdocs\yii\testapp\protected\views\site\_searcha.php(43): CActiveForm->listBox(Object(SearchFormA), 'location', Array, Array)
+#5 C:\xampp\htdocs\yii\framework\web\CBaseController.php(127): require('C:\xampp\htdocs...')
+#6 C:\xampp\htdocs\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#8 C:\xampp\htdocs\yii\testapp\protected\views\site\searcha.php(66): CController->renderPartial('_searcha', Array)
+#9 C:\xampp\htdocs\yii\framework\web\CBaseController.php(127): require('C:\xampp\htdocs...')
+#10 C:\xampp\htdocs\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#12 C:\xampp\htdocs\yii\framework\web\CController.php(783): CController->renderPartial('searcha', Array, true)
+#13 C:\xampp\htdocs\yii\testapp\protected\controllers\SiteController.php(223): CController->render('searcha', Array)
+#14 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionSearcha()
+#15 C:\xampp\htdocs\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#16 C:\xampp\htdocs\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#17 C:\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(283): CController->run('searcha')
+#19 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/searcha')
+#20 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#21 C:\xampp\htdocs\yii\testapp\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/yii/testapp/index.php?r=site/searcha
+HTTP_REFERER=http://localhost/yii/testapp/index.php?r=site/searchbb
+---
+2013/01/15 12:41:21 [error] [exception.CException] exception 'CException' with message 'Property "SearchFormA.location" is not defined.' in C:\xampp\htdocs\yii\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\helpers\CHtml.php(2158): CComponent->__get('location')
+#1 C:\xampp\htdocs\yii\framework\web\helpers\CHtml.php(1515): CHtml::resolveValue(Object(SearchFormA), 'location')
+#2 C:\xampp\htdocs\yii\framework\web\helpers\CHtml.php(1567): CHtml::activeDropDownList(Object(SearchFormA), 'location', Array, Array)
+#3 C:\xampp\htdocs\yii\framework\web\widgets\CActiveForm.php(780): CHtml::activeListBox(Object(SearchFormA), 'location', Array, Array)
+#4 C:\xampp\htdocs\yii\testapp\protected\views\site\_searcha.php(43): CActiveForm->listBox(Object(SearchFormA), 'location', Array, Array)
+#5 C:\xampp\htdocs\yii\framework\web\CBaseController.php(127): require('C:\xampp\htdocs...')
+#6 C:\xampp\htdocs\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#8 C:\xampp\htdocs\yii\testapp\protected\views\site\searcha.php(66): CController->renderPartial('_searcha', Array)
+#9 C:\xampp\htdocs\yii\framework\web\CBaseController.php(127): require('C:\xampp\htdocs...')
+#10 C:\xampp\htdocs\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#12 C:\xampp\htdocs\yii\framework\web\CController.php(783): CController->renderPartial('searcha', Array, true)
+#13 C:\xampp\htdocs\yii\testapp\protected\controllers\SiteController.php(223): CController->render('searcha', Array)
+#14 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionSearcha()
+#15 C:\xampp\htdocs\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#16 C:\xampp\htdocs\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#17 C:\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(283): CController->run('searcha')
+#19 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/searcha')
+#20 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#21 C:\xampp\htdocs\yii\testapp\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/yii/testapp/index.php?r=site/searcha
+HTTP_REFERER=http://localhost/yii/testapp/index.php?r=site/searchbb
+---
+2013/01/15 12:44:14 [error] [php] Undefined index: location (C:\xampp\htdocs\yii\testapp\protected\controllers\SiteController.php:209)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(287): SiteController->runAction()
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(283): SiteController->run()
+#3 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#4 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#5 C:\xampp\htdocs\yii\testapp\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/testapp/index.php?r=site%2Fsearcha&v=a&code=&title=&subject=empty&qualification=empty&year1=&year2=&sdateop=0&sdate=&stimeop=0&shour=&sminute=&day=empty&submita=++++Search++++
+in C:\xampp\htdocs\yii\testapp\protected\controllers\SiteController.php (209)
+in C:\xampp\htdocs\yii\testapp\index.php (13)
+2013/01/15 12:52:04 [error] [exception.CException] exception 'CException' with message 'Property "SearchFormA.location" is not defined.' in C:\xampp\htdocs\yii\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\xampp\htdocs\yii\testapp\protected\models\SearchFormA.php(213): CComponent->__get('location')
+#1 C:\xampp\htdocs\yii\testapp\protected\views\site\searcha.php(84): SearchFormA->search()
+#2 C:\xampp\htdocs\yii\framework\web\CBaseController.php(127): require('C:\xampp\htdocs...')
+#3 C:\xampp\htdocs\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(783): CController->renderPartial('searcha', Array, true)
+#6 C:\xampp\htdocs\yii\testapp\protected\controllers\SiteController.php(223): CController->render('searcha', Array)
+#7 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionSearcha()
+#8 C:\xampp\htdocs\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(283): CController->run('searcha')
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/searcha')
+#13 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\yii\testapp\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/yii/testapp/index.php?r=site%2Fsearcha&v=a&code=&title=&subject=empty&qualification=empty&year1=&year2=&sdateop=0&sdate=&stimeop=0&shour=&sminute=&day=empty&submita=++++Search++++
+HTTP_REFERER=http://localhost/yii/testapp/index.php?r=site/searcha
+---
+2013/01/15 12:53:03 [error] [php] Undefined index: location (C:\xampp\htdocs\yii\framework\base\CComponent.php(607) : eval()'d code:1)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\zii\widgets\grid\CGridColumn.php(145): CDataColumn->renderDataCellContent()
+#1 C:\xampp\htdocs\yii\framework\zii\widgets\grid\CGridView.php(546): CDataColumn->renderDataCell()
+#2 C:\xampp\htdocs\yii\framework\zii\widgets\grid\CGridView.php(517): CGridView->renderTableRow()
+#3 C:\xampp\htdocs\yii\framework\zii\widgets\grid\CGridView.php(427): CGridView->renderTableBody()
+#4 C:\xampp\htdocs\yii\framework\zii\widgets\CBaseListView.php(161): CGridView->renderItems()
+#5 unknown(0): CGridView->renderSection()
+#6 C:\xampp\htdocs\yii\framework\zii\widgets\CBaseListView.php(144): preg_replace_callback()
+#7 C:\xampp\htdocs\yii\framework\zii\widgets\CBaseListView.php(129): CGridView->renderContent()
+#8 C:\xampp\htdocs\yii\framework\web\CBaseController.php(174): CGridView->run()
+#9 C:\xampp\htdocs\yii\testapp\protected\views\site\searcha.php(124): SiteController->widget()
+#10 C:\xampp\htdocs\yii\framework\web\CBaseController.php(127): require()
+#11 C:\xampp\htdocs\yii\framework\web\CBaseController.php(96): SiteController->renderInternal()
+#12 C:\xampp\htdocs\yii\framework\web\CController.php(870): SiteController->renderFile()
+#13 C:\xampp\htdocs\yii\framework\web\CController.php(783): SiteController->renderPartial()
+#14 C:\xampp\htdocs\yii\testapp\protected\controllers\SiteController.php(223): SiteController->render()
+#15 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionSearcha()
+#16 C:\xampp\htdocs\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#17 C:\xampp\htdocs\yii\framework\web\CController.php(287): SiteController->runAction()
+#18 C:\xampp\htdocs\yii\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#19 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(283): SiteController->run()
+#20 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#21 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#22 C:\xampp\htdocs\yii\testapp\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/testapp/index.php?r=site%2Fsearcha&v=a&code=&title=&subject=empty&qualification=empty&year1=&year2=&sdateop=0&sdate=&stimeop=0&shour=&sminute=&day=empty&submita=++++Search++++
+in C:\xampp\htdocs\yii\testapp\protected\views\site\searcha.php (124)
+in C:\xampp\htdocs\yii\testapp\protected\controllers\SiteController.php (223)
+in C:\xampp\htdocs\yii\testapp\index.php (13)
+2013/01/15 12:59:40 [error] [php] Undefined index: location (C:\xampp\htdocs\yii\framework\base\CComponent.php(607) : eval()'d code:1)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\zii\widgets\grid\CGridColumn.php(145): CDataColumn->renderDataCellContent()
+#1 C:\xampp\htdocs\yii\framework\zii\widgets\grid\CGridView.php(546): CDataColumn->renderDataCell()
+#2 C:\xampp\htdocs\yii\framework\zii\widgets\grid\CGridView.php(517): CGridView->renderTableRow()
+#3 C:\xampp\htdocs\yii\framework\zii\widgets\grid\CGridView.php(427): CGridView->renderTableBody()
+#4 C:\xampp\htdocs\yii\framework\zii\widgets\CBaseListView.php(161): CGridView->renderItems()
+#5 unknown(0): CGridView->renderSection()
+#6 C:\xampp\htdocs\yii\framework\zii\widgets\CBaseListView.php(144): preg_replace_callback()
+#7 C:\xampp\htdocs\yii\framework\zii\widgets\CBaseListView.php(129): CGridView->renderContent()
+#8 C:\xampp\htdocs\yii\framework\web\CBaseController.php(174): CGridView->run()
+#9 C:\xampp\htdocs\yii\testapp\protected\views\site\searcha.php(125): SiteController->widget()
+#10 C:\xampp\htdocs\yii\framework\web\CBaseController.php(127): require()
+#11 C:\xampp\htdocs\yii\framework\web\CBaseController.php(96): SiteController->renderInternal()
+#12 C:\xampp\htdocs\yii\framework\web\CController.php(870): SiteController->renderFile()
+#13 C:\xampp\htdocs\yii\framework\web\CController.php(783): SiteController->renderPartial()
+#14 C:\xampp\htdocs\yii\testapp\protected\controllers\SiteController.php(223): SiteController->render()
+#15 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionSearcha()
+#16 C:\xampp\htdocs\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#17 C:\xampp\htdocs\yii\framework\web\CController.php(287): SiteController->runAction()
+#18 C:\xampp\htdocs\yii\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#19 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(283): SiteController->run()
+#20 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#21 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#22 C:\xampp\htdocs\yii\testapp\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/testapp/index.php?r=site%2Fsearcha&v=a&code=&title=&subject=empty&qualification=empty&year1=&year2=&sdateop=0&sdate=&stimeop=0&shour=&sminute=&day=empty&submita=++++Search++++
+in C:\xampp\htdocs\yii\testapp\protected\views\site\searcha.php (125)
+in C:\xampp\htdocs\yii\testapp\protected\controllers\SiteController.php (223)
+in C:\xampp\htdocs\yii\testapp\index.php (13)
+2013/01/15 13:00:33 [error] [php] Undefined index: location (C:\xampp\htdocs\yii\framework\base\CComponent.php(607) : eval()'d code:1)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\zii\widgets\grid\CGridColumn.php(145): CDataColumn->renderDataCellContent()
+#1 C:\xampp\htdocs\yii\framework\zii\widgets\grid\CGridView.php(546): CDataColumn->renderDataCell()
+#2 C:\xampp\htdocs\yii\framework\zii\widgets\grid\CGridView.php(517): CGridView->renderTableRow()
+#3 C:\xampp\htdocs\yii\framework\zii\widgets\grid\CGridView.php(427): CGridView->renderTableBody()
+#4 C:\xampp\htdocs\yii\framework\zii\widgets\CBaseListView.php(161): CGridView->renderItems()
+#5 unknown(0): CGridView->renderSection()
+#6 C:\xampp\htdocs\yii\framework\zii\widgets\CBaseListView.php(144): preg_replace_callback()
+#7 C:\xampp\htdocs\yii\framework\zii\widgets\CBaseListView.php(129): CGridView->renderContent()
+#8 C:\xampp\htdocs\yii\framework\web\CBaseController.php(174): CGridView->run()
+#9 C:\xampp\htdocs\yii\testapp\protected\views\site\searcha.php(125): SiteController->widget()
+#10 C:\xampp\htdocs\yii\framework\web\CBaseController.php(127): require()
+#11 C:\xampp\htdocs\yii\framework\web\CBaseController.php(96): SiteController->renderInternal()
+#12 C:\xampp\htdocs\yii\framework\web\CController.php(870): SiteController->renderFile()
+#13 C:\xampp\htdocs\yii\framework\web\CController.php(783): SiteController->renderPartial()
+#14 C:\xampp\htdocs\yii\testapp\protected\controllers\SiteController.php(223): SiteController->render()
+#15 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionSearcha()
+#16 C:\xampp\htdocs\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#17 C:\xampp\htdocs\yii\framework\web\CController.php(287): SiteController->runAction()
+#18 C:\xampp\htdocs\yii\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#19 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(283): SiteController->run()
+#20 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#21 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#22 C:\xampp\htdocs\yii\testapp\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/testapp/index.php?r=site%2Fsearcha&v=a&code=&title=access&subject=empty&qualification=empty&year1=&year2=&sdateop=0&sdate=&stimeop=0&shour=&sminute=&day=empty&submita=++++Search++++
+in C:\xampp\htdocs\yii\testapp\protected\views\site\searcha.php (125)
+in C:\xampp\htdocs\yii\testapp\protected\controllers\SiteController.php (223)
+in C:\xampp\htdocs\yii\testapp\index.php (13)
+2013/01/15 13:01:56 [error] [php] Undefined index: location (C:\xampp\htdocs\yii\framework\base\CComponent.php(607) : eval()'d code:1)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\zii\widgets\grid\CGridColumn.php(145): CDataColumn->renderDataCellContent()
+#1 C:\xampp\htdocs\yii\framework\zii\widgets\grid\CGridView.php(546): CDataColumn->renderDataCell()
+#2 C:\xampp\htdocs\yii\framework\zii\widgets\grid\CGridView.php(517): CGridView->renderTableRow()
+#3 C:\xampp\htdocs\yii\framework\zii\widgets\grid\CGridView.php(427): CGridView->renderTableBody()
+#4 C:\xampp\htdocs\yii\framework\zii\widgets\CBaseListView.php(161): CGridView->renderItems()
+#5 unknown(0): CGridView->renderSection()
+#6 C:\xampp\htdocs\yii\framework\zii\widgets\CBaseListView.php(144): preg_replace_callback()
+#7 C:\xampp\htdocs\yii\framework\zii\widgets\CBaseListView.php(129): CGridView->renderContent()
+#8 C:\xampp\htdocs\yii\framework\web\CBaseController.php(174): CGridView->run()
+#9 C:\xampp\htdocs\yii\testapp\protected\views\site\searcha.php(125): SiteController->widget()
+#10 C:\xampp\htdocs\yii\framework\web\CBaseController.php(127): require()
+#11 C:\xampp\htdocs\yii\framework\web\CBaseController.php(96): SiteController->renderInternal()
+#12 C:\xampp\htdocs\yii\framework\web\CController.php(870): SiteController->renderFile()
+#13 C:\xampp\htdocs\yii\framework\web\CController.php(783): SiteController->renderPartial()
+#14 C:\xampp\htdocs\yii\testapp\protected\controllers\SiteController.php(223): SiteController->render()
+#15 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionSearcha()
+#16 C:\xampp\htdocs\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#17 C:\xampp\htdocs\yii\framework\web\CController.php(287): SiteController->runAction()
+#18 C:\xampp\htdocs\yii\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#19 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(283): SiteController->run()
+#20 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#21 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#22 C:\xampp\htdocs\yii\testapp\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/testapp/index.php?r=site%2Fsearcha&v=a&code=&title=access&subject=empty&qualification=empty&year1=&year2=&sdateop=0&sdate=&stimeop=0&shour=&sminute=&day=empty&submita=++++Search++++
+in C:\xampp\htdocs\yii\testapp\protected\views\site\searcha.php (125)
+in C:\xampp\htdocs\yii\testapp\protected\controllers\SiteController.php (223)
+in C:\xampp\htdocs\yii\testapp\index.php (13)
+2013/01/15 13:47:54 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[HY000]: General error: 904 OCIStmtExecute: ORA-00904: "D"."OWNER_REF": invalid identifier
+ (ext\pdo_oci\oci_statement.c:148). The SQL statement executed was: select c.uio_id As id, c.calocc_occurrence_code As year, c.fes_uins_instance_code As code, c.long_description As title, c.fes_moa_code As type, c.sp_can_enrol As enrol, c.sp_can_apply As apply, c.sp_can_enquire As enquire, c.ucas As ucas2, e.fes_source_finance As ucas, llat.learning_aim_type_desc As qual, to_char(c.qual_start_date, 'DD MON YYYY') As sdate, to_char(c.qual_end_date, 'DD MON YYYY') As edate, to_char(c.fes_start_time,'HH24:MI')  As stime, to_char(c.fes_end_time,'HH24:MI')  As etime, c.fes_no_of_hours As hours, c.fes_day_of_week As days, c.fes_no_of_weeks As weeks, c.prosp_user_1 As content, c.prosp_user_10 As type2, c.prosp_user_2 As entry_req, a.fes_long_description || ' - ' || a.town || ' ' || a.uk_post_code_pt1 || ' ' || a.uk_post_code_pt2 As location, a.uk_post_code_pt1 || ' ' || a.uk_post_code_pt2 As postcode, sum(b.amount_payable) As fees from locations a, unit_instance_occurrences c, unit_instances e , uio_qual_aims uqa, fefc_qual_aims fqa, lad_learning_aim_types llat , fee_values b where a.location_code (+) = c.sloc_location_code and e.fes_unit_instance_code = c.fes_uins_instance_code and c.uio_id = b.uio_id (+) and (e.ui_id = d.owner_ref (+) ) and uqa.funding_year = fqa.funding_year (+) and uqa.qual_code = fqa.qual_code (+) and fqa.qual_type = llat.learning_aim_type_code (+) and c.calocc_occurrence_code = uqa.CALOCC_CODE (+) and c.fes_uins_instance_code = uqa.unit_instance_code (+) and c.uio_id = :uio_id GROUP BY c.uio_id,c.calocc_occurrence_code,c.fes_uins_instance_code,c.long_description,c.fes_moa_code,c.sp_can_enrol,c.sp_can_apply,c.sp_can_enquire,c.ucas,e.fes_source_finance,llat.learning_aim_type_desc,c.qual_start_date, c.qual_end_date,c.fes_start_time,c.fes_end_time,c.fes_day_of_week,c.fes_no_of_hours,c.fes_no_of_weeks,c.prosp_user_1,c.prosp_user_10,c.prosp_user_2,a.fes_long_description || ' - ' || a.town || ' ' || a.uk_post_code_pt1 || ' ' || a.uk_post_code_pt2,a.uk_post_code_pt1 || ' ' || a.uk_post_code_pt2 . Bound with :uio_id='286678'.
+in C:\xampp\htdocs\yii\testapp\protected\models\Course.php (247)
+in C:\xampp\htdocs\yii\testapp\protected\views\site\crsview.php (24)
+in C:\xampp\htdocs\yii\testapp\protected\controllers\SiteController.php (262)
+2013/01/15 13:47:54 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[HY000]: General error: 904 OCIStmtExecute: ORA-00904: "D"."OWNER_REF": invalid identifier
+ (ext\pdo_oci\oci_statement.c:148). The SQL statement executed was: select c.uio_id As id, c.calocc_occurrence_code As year, c.fes_uins_instance_code As code, c.long_description As title, c.fes_moa_code As type, c.sp_can_enrol As enrol, c.sp_can_apply As apply, c.sp_can_enquire As enquire, c.ucas As ucas2, e.fes_source_finance As ucas, llat.learning_aim_type_desc As qual, to_char(c.qual_start_date, 'DD MON YYYY') As sdate, to_char(c.qual_end_date, 'DD MON YYYY') As edate, to_char(c.fes_start_time,'HH24:MI')  As stime, to_char(c.fes_end_time,'HH24:MI')  As etime, c.fes_no_of_hours As hours, c.fes_day_of_week As days, c.fes_no_of_weeks As weeks, c.prosp_user_1 As content, c.prosp_user_10 As type2, c.prosp_user_2 As entry_req, a.fes_long_description || ' - ' || a.town || ' ' || a.uk_post_code_pt1 || ' ' || a.uk_post_code_pt2 As location, a.uk_post_code_pt1 || ' ' || a.uk_post_code_pt2 As postcode, sum(b.amount_payable) As fees from locations a, unit_instance_occurrences c, unit_instances e , uio_qual_aims uqa, fefc_qual_aims fqa, lad_learning_aim_types llat , fee_values b where a.location_code (+) = c.sloc_location_code and e.fes_unit_instance_code = c.fes_uins_instance_code and c.uio_id = b.uio_id (+) and (e.ui_id = d.owner_ref (+) ) and uqa.funding_year = fqa.funding_year (+) and uqa.qual_code = fqa.qual_code (+) and fqa.qual_type = llat.learning_aim_type_code (+) and c.calocc_occurrence_code = uqa.CALOCC_CODE (+) and c.fes_uins_instance_code = uqa.unit_instance_code (+) and c.uio_id = :uio_id GROUP BY c.uio_id,c.calocc_occurrence_code,c.fes_uins_instance_code,c.long_description,c.fes_moa_code,c.sp_can_enrol,c.sp_can_apply,c.sp_can_enquire,c.ucas,e.fes_source_finance,llat.learning_aim_type_desc,c.qual_start_date, c.qual_end_date,c.fes_start_time,c.fes_end_time,c.fes_day_of_week,c.fes_no_of_hours,c.fes_no_of_weeks,c.prosp_user_1,c.prosp_user_10,c.prosp_user_2,a.fes_long_description || ' - ' || a.town || ' ' || a.uk_post_code_pt1 || ' ' || a.uk_post_code_pt2,a.uk_post_code_pt1 || ' ' || a.uk_post_code_pt2 . Bound with :uio_id='286678'' in C:\xampp\htdocs\yii\framework\db\CDbCommand.php:528
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\CDbCommand.php(408): CDbCommand->queryInternal('fetch', Array, Array)
+#1 C:\xampp\htdocs\yii\testapp\protected\models\Course.php(247): CDbCommand->queryRow()
+#2 C:\xampp\htdocs\yii\testapp\protected\views\site\crsview.php(24): Course->findCourseById2('286678')
+#3 C:\xampp\htdocs\yii\framework\web\CBaseController.php(127): require('C:\xampp\htdocs...')
+#4 C:\xampp\htdocs\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(783): CController->renderPartial('crsview', Array, true)
+#7 C:\xampp\htdocs\yii\testapp\protected\controllers\SiteController.php(262): CController->render('crsview', Array)
+#8 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionCrsview()
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(283): CController->run('crsview')
+#13 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/crsview')
+#14 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\yii\testapp\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/yii/testapp/index.php?r=site/crsview&id=286678&keyword=AAT+Level+1+Access+%5B28%2F01%2F13+PTN%5D&v=bb
+HTTP_REFERER=http://localhost/yii/testapp/index.php?r=site/searchbb
+---
+2013/01/30 13:27:16 [error] [exception.CException] exception 'CException' with message 'SearchFormA and its behaviors do not have a method or closure named "academicYearOptions".' in C:\xampp\htdocs\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\xampp\htdocs\yii\testapp\protected\views\site\_searcha.php(50): CComponent->__call('academicYearOpt...', Array)
+#1 C:\xampp\htdocs\yii\testapp\protected\views\site\_searcha.php(50): SearchFormA->academicYearOptions('Any Year')
+#2 C:\xampp\htdocs\yii\framework\web\CBaseController.php(127): require('C:\xampp\htdocs...')
+#3 C:\xampp\htdocs\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#5 C:\xampp\htdocs\yii\testapp\protected\views\site\searcha.php(67): CController->renderPartial('_searcha', Array)
+#6 C:\xampp\htdocs\yii\framework\web\CBaseController.php(127): require('C:\xampp\htdocs...')
+#7 C:\xampp\htdocs\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#8 C:\xampp\htdocs\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(783): CController->renderPartial('searcha', Array, true)
+#10 C:\xampp\htdocs\yii\testapp\protected\controllers\SiteController.php(223): CController->render('searcha', Array)
+#11 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionSearcha()
+#12 C:\xampp\htdocs\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#13 C:\xampp\htdocs\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#14 C:\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(283): CController->run('searcha')
+#16 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/searcha')
+#17 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#18 C:\xampp\htdocs\yii\testapp\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/yii/testapp/index.php?r=site/searcha
+HTTP_REFERER=http://localhost/yii/testapp/index.php?r=site/searchbb
+---
+2013/01/30 13:37:31 [error] [php] Undefined index: year1 (C:\xampp\htdocs\yii\testapp\protected\controllers\SiteController.php:210)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(287): SiteController->runAction()
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(283): SiteController->run()
+#3 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#4 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#5 C:\xampp\htdocs\yii\testapp\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/testapp/index.php?r=site%2Fsearcha&v=a&code=&title=&subject=empty&qualification=empty&year=%24yy1&sdateop=0&sdate=&stimeop=0&shour=&sminute=&day=empty&submita=++++Search++++
+in C:\xampp\htdocs\yii\testapp\protected\controllers\SiteController.php (210)
+in C:\xampp\htdocs\yii\testapp\index.php (13)
+2013/02/05 19:35:43 [error] [php] include(SearchFormB.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (C:\xampp\htdocs\yii\framework\YiiBase.php:423)
+Stack trace:
+#0 C:\xampp\htdocs\yii\testapp\protected\controllers\SiteController.php(153): spl_autoload_call()
+#1 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionSearchbb()
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(287): SiteController->runAction()
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#5 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(283): SiteController->run()
+#6 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#7 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#8 C:\xampp\htdocs\yii\testapp\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/testapp/index.php?r=site/searchbb&keyword=art
+in C:\xampp\htdocs\yii\testapp\protected\controllers\SiteController.php (153)
+in C:\xampp\htdocs\yii\testapp\index.php (13)
+2013/02/05 19:38:13 [error] [php] include(SearchFormB.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (C:\xampp\htdocs\yii\framework\YiiBase.php:423)
+Stack trace:
+#0 C:\xampp\htdocs\yii\testapp\protected\controllers\SiteController.php(153): spl_autoload_call()
+#1 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionSearchbb()
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(287): SiteController->runAction()
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#5 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(283): SiteController->run()
+#6 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#7 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#8 C:\xampp\htdocs\yii\testapp\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/testapp/index.php?r=site/searchbb
+in C:\xampp\htdocs\yii\testapp\protected\controllers\SiteController.php (153)
+in C:\xampp\htdocs\yii\testapp\index.php (13)
+2013/02/07 11:20:19 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[HY000]: General error: 923 OCIStmtExecute: ORA-00923: FROM keyword not found where expected
+ (ext\pdo_oci\oci_statement.c:148). The SQL statement executed was: select c.long_description || ' [' || 'Year: ' || c.calocc_occurrence_code ' ' || (CASE WHEN SUBSTR(c.fes_moa_code,1,2) = 'FT' THEN 'Full Time' WHEN SUBSTR(c.fes_moa_code,1,2) = 'UM' THEN '' ELSE 'Part Time' END) || ']' As label, c.uio_id As id from topics a, unit_instances b, unit_instance_occurrences c where a.topic_code=b.topic_topic_code and b.fes_unit_instance_code=c.fes_uins_instance_code and (lower(c.keywords) like :keyword or lower(c.long_description) like :keyword) and a.sp_visible = 'Y' and c.status = 'ACTIVE' and c.sp_visible = 'Y' order by c.long_description Asc . Bound with :keyword='%en%'.
+in C:\xampp\htdocs\yii\testapp\protected\controllers\SiteController.php (93)
+in C:\xampp\htdocs\yii\testapp\index.php (13)
+2013/02/07 11:20:19 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[HY000]: General error: 923 OCIStmtExecute: ORA-00923: FROM keyword not found where expected
+ (ext\pdo_oci\oci_statement.c:148). The SQL statement executed was: select c.long_description || ' [' || 'Year: ' || c.calocc_occurrence_code ' ' || (CASE WHEN SUBSTR(c.fes_moa_code,1,2) = 'FT' THEN 'Full Time' WHEN SUBSTR(c.fes_moa_code,1,2) = 'UM' THEN '' ELSE 'Part Time' END) || ']' As label, c.uio_id As id from topics a, unit_instances b, unit_instance_occurrences c where a.topic_code=b.topic_topic_code and b.fes_unit_instance_code=c.fes_uins_instance_code and (lower(c.keywords) like :keyword or lower(c.long_description) like :keyword) and a.sp_visible = 'Y' and c.status = 'ACTIVE' and c.sp_visible = 'Y' order by c.long_description Asc . Bound with :keyword='%en%'' in C:\xampp\htdocs\yii\framework\db\CDbCommand.php:528
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\CDbCommand.php(390): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\xampp\htdocs\yii\testapp\protected\controllers\SiteController.php(93): CDbCommand->queryAll()
+#2 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionSuggestCourse()
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(283): CController->run('suggestCourse')
+#7 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/suggestCou...')
+#8 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\yii\testapp\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/yii/testapp/index.php?r=site/suggestCourse&term=en&_=1360232417283
+HTTP_REFERER=http://scna7005.swindon-college.ac.uk/yii/testapp/index.php?r=site/searchbb
+---
+2013/02/07 11:20:19 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[HY000]: General error: 923 OCIStmtExecute: ORA-00923: FROM keyword not found where expected
+ (ext\pdo_oci\oci_statement.c:148). The SQL statement executed was: select c.long_description || ' [' || 'Year: ' || c.calocc_occurrence_code ' ' || (CASE WHEN SUBSTR(c.fes_moa_code,1,2) = 'FT' THEN 'Full Time' WHEN SUBSTR(c.fes_moa_code,1,2) = 'UM' THEN '' ELSE 'Part Time' END) || ']' As label, c.uio_id As id from topics a, unit_instances b, unit_instance_occurrences c where a.topic_code=b.topic_topic_code and b.fes_unit_instance_code=c.fes_uins_instance_code and (lower(c.keywords) like :keyword or lower(c.long_description) like :keyword) and a.sp_visible = 'Y' and c.status = 'ACTIVE' and c.sp_visible = 'Y' order by c.long_description Asc . Bound with :keyword='%enginee%'.
+in C:\xampp\htdocs\yii\testapp\protected\controllers\SiteController.php (93)
+in C:\xampp\htdocs\yii\testapp\index.php (13)
+2013/02/07 11:20:19 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[HY000]: General error: 923 OCIStmtExecute: ORA-00923: FROM keyword not found where expected
+ (ext\pdo_oci\oci_statement.c:148). The SQL statement executed was: select c.long_description || ' [' || 'Year: ' || c.calocc_occurrence_code ' ' || (CASE WHEN SUBSTR(c.fes_moa_code,1,2) = 'FT' THEN 'Full Time' WHEN SUBSTR(c.fes_moa_code,1,2) = 'UM' THEN '' ELSE 'Part Time' END) || ']' As label, c.uio_id As id from topics a, unit_instances b, unit_instance_occurrences c where a.topic_code=b.topic_topic_code and b.fes_unit_instance_code=c.fes_uins_instance_code and (lower(c.keywords) like :keyword or lower(c.long_description) like :keyword) and a.sp_visible = 'Y' and c.status = 'ACTIVE' and c.sp_visible = 'Y' order by c.long_description Asc . Bound with :keyword='%enginee%'' in C:\xampp\htdocs\yii\framework\db\CDbCommand.php:528
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\CDbCommand.php(390): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\xampp\htdocs\yii\testapp\protected\controllers\SiteController.php(93): CDbCommand->queryAll()
+#2 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionSuggestCourse()
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(283): CController->run('suggestCourse')
+#7 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/suggestCou...')
+#8 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\yii\testapp\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/yii/testapp/index.php?r=site/suggestCourse&term=enginee&_=1360232418496
+HTTP_REFERER=http://scna7005.swindon-college.ac.uk/yii/testapp/index.php?r=site/searchbb
+---
+2013/02/07 11:20:26 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[HY000]: General error: 923 OCIStmtExecute: ORA-00923: FROM keyword not found where expected
+ (ext\pdo_oci\oci_statement.c:148). The SQL statement executed was: select c.long_description || ' [' || 'Year: ' || c.calocc_occurrence_code ' ' || (CASE WHEN SUBSTR(c.fes_moa_code,1,2) = 'FT' THEN 'Full Time' WHEN SUBSTR(c.fes_moa_code,1,2) = 'UM' THEN '' ELSE 'Part Time' END) || ']' As label, c.uio_id As id from topics a, unit_instances b, unit_instance_occurrences c where a.topic_code=b.topic_topic_code and b.fes_unit_instance_code=c.fes_uins_instance_code and (lower(c.keywords) like :keyword or lower(c.long_description) like :keyword) and a.sp_visible = 'Y' and c.status = 'ACTIVE' and c.sp_visible = 'Y' order by c.long_description Asc . Bound with :keyword='%engineering%'.
+in C:\xampp\htdocs\yii\testapp\protected\controllers\SiteController.php (93)
+in C:\xampp\htdocs\yii\testapp\index.php (13)
+2013/02/07 11:20:26 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[HY000]: General error: 923 OCIStmtExecute: ORA-00923: FROM keyword not found where expected
+ (ext\pdo_oci\oci_statement.c:148). The SQL statement executed was: select c.long_description || ' [' || 'Year: ' || c.calocc_occurrence_code ' ' || (CASE WHEN SUBSTR(c.fes_moa_code,1,2) = 'FT' THEN 'Full Time' WHEN SUBSTR(c.fes_moa_code,1,2) = 'UM' THEN '' ELSE 'Part Time' END) || ']' As label, c.uio_id As id from topics a, unit_instances b, unit_instance_occurrences c where a.topic_code=b.topic_topic_code and b.fes_unit_instance_code=c.fes_uins_instance_code and (lower(c.keywords) like :keyword or lower(c.long_description) like :keyword) and a.sp_visible = 'Y' and c.status = 'ACTIVE' and c.sp_visible = 'Y' order by c.long_description Asc . Bound with :keyword='%engineering%'' in C:\xampp\htdocs\yii\framework\db\CDbCommand.php:528
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\CDbCommand.php(390): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\xampp\htdocs\yii\testapp\protected\controllers\SiteController.php(93): CDbCommand->queryAll()
+#2 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionSuggestCourse()
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(283): CController->run('suggestCourse')
+#7 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/suggestCou...')
+#8 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\yii\testapp\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/yii/testapp/index.php?r=site/suggestCourse&term=engineering&_=1360232426336
+HTTP_REFERER=http://scna7005.swindon-college.ac.uk/yii/testapp/index.php?r=site/searchbb
+---
+2013/02/07 11:20:40 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[HY000]: General error: 923 OCIStmtExecute: ORA-00923: FROM keyword not found where expected
+ (ext\pdo_oci\oci_statement.c:148). The SQL statement executed was: select c.long_description || ' [' || 'Year: ' || c.calocc_occurrence_code ' ' || (CASE WHEN SUBSTR(c.fes_moa_code,1,2) = 'FT' THEN 'Full Time' WHEN SUBSTR(c.fes_moa_code,1,2) = 'UM' THEN '' ELSE 'Part Time' END) || ']' As label, c.uio_id As id from topics a, unit_instances b, unit_instance_occurrences c where a.topic_code=b.topic_topic_code and b.fes_unit_instance_code=c.fes_uins_instance_code and (lower(c.keywords) like :keyword or lower(c.long_description) like :keyword) and a.sp_visible = 'Y' and c.status = 'ACTIVE' and c.sp_visible = 'Y' order by c.long_description Asc . Bound with :keyword='%engineerin%'.
+in C:\xampp\htdocs\yii\testapp\protected\controllers\SiteController.php (93)
+in C:\xampp\htdocs\yii\testapp\index.php (13)
+2013/02/07 11:20:40 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[HY000]: General error: 923 OCIStmtExecute: ORA-00923: FROM keyword not found where expected
+ (ext\pdo_oci\oci_statement.c:148). The SQL statement executed was: select c.long_description || ' [' || 'Year: ' || c.calocc_occurrence_code ' ' || (CASE WHEN SUBSTR(c.fes_moa_code,1,2) = 'FT' THEN 'Full Time' WHEN SUBSTR(c.fes_moa_code,1,2) = 'UM' THEN '' ELSE 'Part Time' END) || ']' As label, c.uio_id As id from topics a, unit_instances b, unit_instance_occurrences c where a.topic_code=b.topic_topic_code and b.fes_unit_instance_code=c.fes_uins_instance_code and (lower(c.keywords) like :keyword or lower(c.long_description) like :keyword) and a.sp_visible = 'Y' and c.status = 'ACTIVE' and c.sp_visible = 'Y' order by c.long_description Asc . Bound with :keyword='%engineerin%'' in C:\xampp\htdocs\yii\framework\db\CDbCommand.php:528
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\CDbCommand.php(390): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\xampp\htdocs\yii\testapp\protected\controllers\SiteController.php(93): CDbCommand->queryAll()
+#2 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionSuggestCourse()
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(283): CController->run('suggestCourse')
+#7 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/suggestCou...')
+#8 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\yii\testapp\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/yii/testapp/index.php?r=site/suggestCourse&term=engineerin&_=1360232440148
+HTTP_REFERER=http://scna7005.swindon-college.ac.uk/yii/testapp/index.php?r=site/searchbb
+---
+2013/02/07 11:20:42 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[HY000]: General error: 923 OCIStmtExecute: ORA-00923: FROM keyword not found where expected
+ (ext\pdo_oci\oci_statement.c:148). The SQL statement executed was: select c.long_description || ' [' || 'Year: ' || c.calocc_occurrence_code ' ' || (CASE WHEN SUBSTR(c.fes_moa_code,1,2) = 'FT' THEN 'Full Time' WHEN SUBSTR(c.fes_moa_code,1,2) = 'UM' THEN '' ELSE 'Part Time' END) || ']' As label, c.uio_id As id from topics a, unit_instances b, unit_instance_occurrences c where a.topic_code=b.topic_topic_code and b.fes_unit_instance_code=c.fes_uins_instance_code and (lower(c.keywords) like :keyword or lower(c.long_description) like :keyword) and a.sp_visible = 'Y' and c.status = 'ACTIVE' and c.sp_visible = 'Y' order by c.long_description Asc . Bound with :keyword='%esol%'.
+in C:\xampp\htdocs\yii\testapp\protected\controllers\SiteController.php (93)
+in C:\xampp\htdocs\yii\testapp\index.php (13)
+2013/02/07 11:20:42 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[HY000]: General error: 923 OCIStmtExecute: ORA-00923: FROM keyword not found where expected
+ (ext\pdo_oci\oci_statement.c:148). The SQL statement executed was: select c.long_description || ' [' || 'Year: ' || c.calocc_occurrence_code ' ' || (CASE WHEN SUBSTR(c.fes_moa_code,1,2) = 'FT' THEN 'Full Time' WHEN SUBSTR(c.fes_moa_code,1,2) = 'UM' THEN '' ELSE 'Part Time' END) || ']' As label, c.uio_id As id from topics a, unit_instances b, unit_instance_occurrences c where a.topic_code=b.topic_topic_code and b.fes_unit_instance_code=c.fes_uins_instance_code and (lower(c.keywords) like :keyword or lower(c.long_description) like :keyword) and a.sp_visible = 'Y' and c.status = 'ACTIVE' and c.sp_visible = 'Y' order by c.long_description Asc . Bound with :keyword='%esol%'' in C:\xampp\htdocs\yii\framework\db\CDbCommand.php:528
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\CDbCommand.php(390): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\xampp\htdocs\yii\testapp\protected\controllers\SiteController.php(93): CDbCommand->queryAll()
+#2 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionSuggestCourse()
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(283): CController->run('suggestCourse')
+#7 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/suggestCou...')
+#8 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\yii\testapp\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/yii/testapp/index.php?r=site/suggestCourse&term=esol&_=1360232442519
+HTTP_REFERER=http://scna7005.swindon-college.ac.uk/yii/testapp/index.php?r=site/searchbb
+---
+2013/02/07 11:21:06 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[HY000]: General error: 923 OCIStmtExecute: ORA-00923: FROM keyword not found where expected
+ (ext\pdo_oci\oci_statement.c:148). The SQL statement executed was: select c.long_description || ' [' || 'Year: ' || c.calocc_occurrence_code ' ' || (CASE WHEN SUBSTR(c.fes_moa_code,1,2) = 'FT' THEN 'Full Time' WHEN SUBSTR(c.fes_moa_code,1,2) = 'UM' THEN '' ELSE 'Part Time' END) || ']' As label, c.uio_id As id from topics a, unit_instances b, unit_instance_occurrences c where a.topic_code=b.topic_topic_code and b.fes_unit_instance_code=c.fes_uins_instance_code and (lower(c.keywords) like :keyword or lower(c.long_description) like :keyword) and a.sp_visible = 'Y' and c.status = 'ACTIVE' and c.sp_visible = 'Y' order by c.long_description Asc . Bound with :keyword='%esoles%'.
+in C:\xampp\htdocs\yii\testapp\protected\controllers\SiteController.php (93)
+in C:\xampp\htdocs\yii\testapp\index.php (13)
+2013/02/07 11:21:06 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[HY000]: General error: 923 OCIStmtExecute: ORA-00923: FROM keyword not found where expected
+ (ext\pdo_oci\oci_statement.c:148). The SQL statement executed was: select c.long_description || ' [' || 'Year: ' || c.calocc_occurrence_code ' ' || (CASE WHEN SUBSTR(c.fes_moa_code,1,2) = 'FT' THEN 'Full Time' WHEN SUBSTR(c.fes_moa_code,1,2) = 'UM' THEN '' ELSE 'Part Time' END) || ']' As label, c.uio_id As id from topics a, unit_instances b, unit_instance_occurrences c where a.topic_code=b.topic_topic_code and b.fes_unit_instance_code=c.fes_uins_instance_code and (lower(c.keywords) like :keyword or lower(c.long_description) like :keyword) and a.sp_visible = 'Y' and c.status = 'ACTIVE' and c.sp_visible = 'Y' order by c.long_description Asc . Bound with :keyword='%esoles%'' in C:\xampp\htdocs\yii\framework\db\CDbCommand.php:528
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\CDbCommand.php(390): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\xampp\htdocs\yii\testapp\protected\controllers\SiteController.php(93): CDbCommand->queryAll()
+#2 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionSuggestCourse()
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(283): CController->run('suggestCourse')
+#7 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/suggestCou...')
+#8 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\yii\testapp\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/yii/testapp/index.php?r=site/suggestCourse&term=esoles&_=1360232466077
+HTTP_REFERER=http://scna7005.swindon-college.ac.uk/yii/testapp/index.php?r=site/searchbb
+---
+2013/02/07 11:21:06 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[HY000]: General error: 923 OCIStmtExecute: ORA-00923: FROM keyword not found where expected
+ (ext\pdo_oci\oci_statement.c:148). The SQL statement executed was: select c.long_description || ' [' || 'Year: ' || c.calocc_occurrence_code ' ' || (CASE WHEN SUBSTR(c.fes_moa_code,1,2) = 'FT' THEN 'Full Time' WHEN SUBSTR(c.fes_moa_code,1,2) = 'UM' THEN '' ELSE 'Part Time' END) || ']' As label, c.uio_id As id from topics a, unit_instances b, unit_instance_occurrences c where a.topic_code=b.topic_topic_code and b.fes_unit_instance_code=c.fes_uins_instance_code and (lower(c.keywords) like :keyword or lower(c.long_description) like :keyword) and a.sp_visible = 'Y' and c.status = 'ACTIVE' and c.sp_visible = 'Y' order by c.long_description Asc . Bound with :keyword='%esoleso%'.
+in C:\xampp\htdocs\yii\testapp\protected\controllers\SiteController.php (93)
+in C:\xampp\htdocs\yii\testapp\index.php (13)
+2013/02/07 11:21:06 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[HY000]: General error: 923 OCIStmtExecute: ORA-00923: FROM keyword not found where expected
+ (ext\pdo_oci\oci_statement.c:148). The SQL statement executed was: select c.long_description || ' [' || 'Year: ' || c.calocc_occurrence_code ' ' || (CASE WHEN SUBSTR(c.fes_moa_code,1,2) = 'FT' THEN 'Full Time' WHEN SUBSTR(c.fes_moa_code,1,2) = 'UM' THEN '' ELSE 'Part Time' END) || ']' As label, c.uio_id As id from topics a, unit_instances b, unit_instance_occurrences c where a.topic_code=b.topic_topic_code and b.fes_unit_instance_code=c.fes_uins_instance_code and (lower(c.keywords) like :keyword or lower(c.long_description) like :keyword) and a.sp_visible = 'Y' and c.status = 'ACTIVE' and c.sp_visible = 'Y' order by c.long_description Asc . Bound with :keyword='%esoleso%'' in C:\xampp\htdocs\yii\framework\db\CDbCommand.php:528
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\CDbCommand.php(390): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\xampp\htdocs\yii\testapp\protected\controllers\SiteController.php(93): CDbCommand->queryAll()
+#2 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionSuggestCourse()
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(283): CController->run('suggestCourse')
+#7 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/suggestCou...')
+#8 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\yii\testapp\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/yii/testapp/index.php?r=site/suggestCourse&term=esoleso&_=1360232466442
+HTTP_REFERER=http://scna7005.swindon-college.ac.uk/yii/testapp/index.php?r=site/searchbb
+---
+2013/02/07 11:21:08 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[HY000]: General error: 923 OCIStmtExecute: ORA-00923: FROM keyword not found where expected
+ (ext\pdo_oci\oci_statement.c:148). The SQL statement executed was: select c.long_description || ' [' || 'Year: ' || c.calocc_occurrence_code ' ' || (CASE WHEN SUBSTR(c.fes_moa_code,1,2) = 'FT' THEN 'Full Time' WHEN SUBSTR(c.fes_moa_code,1,2) = 'UM' THEN '' ELSE 'Part Time' END) || ']' As label, c.uio_id As id from topics a, unit_instances b, unit_instance_occurrences c where a.topic_code=b.topic_topic_code and b.fes_unit_instance_code=c.fes_uins_instance_code and (lower(c.keywords) like :keyword or lower(c.long_description) like :keyword) and a.sp_visible = 'Y' and c.status = 'ACTIVE' and c.sp_visible = 'Y' order by c.long_description Asc . Bound with :keyword='%esole%'.
+in C:\xampp\htdocs\yii\testapp\protected\controllers\SiteController.php (93)
+in C:\xampp\htdocs\yii\testapp\index.php (13)
+2013/02/07 11:21:08 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[HY000]: General error: 923 OCIStmtExecute: ORA-00923: FROM keyword not found where expected
+ (ext\pdo_oci\oci_statement.c:148). The SQL statement executed was: select c.long_description || ' [' || 'Year: ' || c.calocc_occurrence_code ' ' || (CASE WHEN SUBSTR(c.fes_moa_code,1,2) = 'FT' THEN 'Full Time' WHEN SUBSTR(c.fes_moa_code,1,2) = 'UM' THEN '' ELSE 'Part Time' END) || ']' As label, c.uio_id As id from topics a, unit_instances b, unit_instance_occurrences c where a.topic_code=b.topic_topic_code and b.fes_unit_instance_code=c.fes_uins_instance_code and (lower(c.keywords) like :keyword or lower(c.long_description) like :keyword) and a.sp_visible = 'Y' and c.status = 'ACTIVE' and c.sp_visible = 'Y' order by c.long_description Asc . Bound with :keyword='%esole%'' in C:\xampp\htdocs\yii\framework\db\CDbCommand.php:528
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\CDbCommand.php(390): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\xampp\htdocs\yii\testapp\protected\controllers\SiteController.php(93): CDbCommand->queryAll()
+#2 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionSuggestCourse()
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(283): CController->run('suggestCourse')
+#7 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/suggestCou...')
+#8 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\yii\testapp\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/yii/testapp/index.php?r=site/suggestCourse&term=esole&_=1360232468360
+HTTP_REFERER=http://scna7005.swindon-college.ac.uk/yii/testapp/index.php?r=site/searchbb
+---
+2013/02/07 11:21:10 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[HY000]: General error: 923 OCIStmtExecute: ORA-00923: FROM keyword not found where expected
+ (ext\pdo_oci\oci_statement.c:148). The SQL statement executed was: select c.long_description || ' [' || 'Year: ' || c.calocc_occurrence_code ' ' || (CASE WHEN SUBSTR(c.fes_moa_code,1,2) = 'FT' THEN 'Full Time' WHEN SUBSTR(c.fes_moa_code,1,2) = 'UM' THEN '' ELSE 'Part Time' END) || ']' As label, c.uio_id As id from topics a, unit_instances b, unit_instance_occurrences c where a.topic_code=b.topic_topic_code and b.fes_unit_instance_code=c.fes_uins_instance_code and (lower(c.keywords) like :keyword or lower(c.long_description) like :keyword) and a.sp_visible = 'Y' and c.status = 'ACTIVE' and c.sp_visible = 'Y' order by c.long_description Asc . Bound with :keyword='%es%'.
+in C:\xampp\htdocs\yii\testapp\protected\controllers\SiteController.php (93)
+in C:\xampp\htdocs\yii\testapp\index.php (13)
+2013/02/07 11:21:10 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[HY000]: General error: 923 OCIStmtExecute: ORA-00923: FROM keyword not found where expected
+ (ext\pdo_oci\oci_statement.c:148). The SQL statement executed was: select c.long_description || ' [' || 'Year: ' || c.calocc_occurrence_code ' ' || (CASE WHEN SUBSTR(c.fes_moa_code,1,2) = 'FT' THEN 'Full Time' WHEN SUBSTR(c.fes_moa_code,1,2) = 'UM' THEN '' ELSE 'Part Time' END) || ']' As label, c.uio_id As id from topics a, unit_instances b, unit_instance_occurrences c where a.topic_code=b.topic_topic_code and b.fes_unit_instance_code=c.fes_uins_instance_code and (lower(c.keywords) like :keyword or lower(c.long_description) like :keyword) and a.sp_visible = 'Y' and c.status = 'ACTIVE' and c.sp_visible = 'Y' order by c.long_description Asc . Bound with :keyword='%es%'' in C:\xampp\htdocs\yii\framework\db\CDbCommand.php:528
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\CDbCommand.php(390): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\xampp\htdocs\yii\testapp\protected\controllers\SiteController.php(93): CDbCommand->queryAll()
+#2 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionSuggestCourse()
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(283): CController->run('suggestCourse')
+#7 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/suggestCou...')
+#8 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\yii\testapp\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/yii/testapp/index.php?r=site/suggestCourse&term=es&_=1360232470078
+HTTP_REFERER=http://scna7005.swindon-college.ac.uk/yii/testapp/index.php?r=site/searchbb
+---
+2013/02/07 11:21:10 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[HY000]: General error: 923 OCIStmtExecute: ORA-00923: FROM keyword not found where expected
+ (ext\pdo_oci\oci_statement.c:148). The SQL statement executed was: select c.long_description || ' [' || 'Year: ' || c.calocc_occurrence_code ' ' || (CASE WHEN SUBSTR(c.fes_moa_code,1,2) = 'FT' THEN 'Full Time' WHEN SUBSTR(c.fes_moa_code,1,2) = 'UM' THEN '' ELSE 'Part Time' END) || ']' As label, c.uio_id As id from topics a, unit_instances b, unit_instance_occurrences c where a.topic_code=b.topic_topic_code and b.fes_unit_instance_code=c.fes_uins_instance_code and (lower(c.keywords) like :keyword or lower(c.long_description) like :keyword) and a.sp_visible = 'Y' and c.status = 'ACTIVE' and c.sp_visible = 'Y' order by c.long_description Asc . Bound with :keyword='%esol%'.
+in C:\xampp\htdocs\yii\testapp\protected\controllers\SiteController.php (93)
+in C:\xampp\htdocs\yii\testapp\index.php (13)
+2013/02/07 11:21:10 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[HY000]: General error: 923 OCIStmtExecute: ORA-00923: FROM keyword not found where expected
+ (ext\pdo_oci\oci_statement.c:148). The SQL statement executed was: select c.long_description || ' [' || 'Year: ' || c.calocc_occurrence_code ' ' || (CASE WHEN SUBSTR(c.fes_moa_code,1,2) = 'FT' THEN 'Full Time' WHEN SUBSTR(c.fes_moa_code,1,2) = 'UM' THEN '' ELSE 'Part Time' END) || ']' As label, c.uio_id As id from topics a, unit_instances b, unit_instance_occurrences c where a.topic_code=b.topic_topic_code and b.fes_unit_instance_code=c.fes_uins_instance_code and (lower(c.keywords) like :keyword or lower(c.long_description) like :keyword) and a.sp_visible = 'Y' and c.status = 'ACTIVE' and c.sp_visible = 'Y' order by c.long_description Asc . Bound with :keyword='%esol%'' in C:\xampp\htdocs\yii\framework\db\CDbCommand.php:528
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\CDbCommand.php(390): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\xampp\htdocs\yii\testapp\protected\controllers\SiteController.php(93): CDbCommand->queryAll()
+#2 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionSuggestCourse()
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(283): CController->run('suggestCourse')
+#7 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/suggestCou...')
+#8 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\yii\testapp\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/yii/testapp/index.php?r=site/suggestCourse&term=esol&_=1360232470674
+HTTP_REFERER=http://scna7005.swindon-college.ac.uk/yii/testapp/index.php?r=site/searchbb
+---
+2013/02/07 11:21:17 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[HY000]: General error: 923 OCIStmtExecute: ORA-00923: FROM keyword not found where expected
+ (ext\pdo_oci\oci_statement.c:148). The SQL statement executed was: select c.long_description || ' [' || 'Year: ' || c.calocc_occurrence_code ' ' || (CASE WHEN SUBSTR(c.fes_moa_code,1,2) = 'FT' THEN 'Full Time' WHEN SUBSTR(c.fes_moa_code,1,2) = 'UM' THEN '' ELSE 'Part Time' END) || ']' As label, c.uio_id As id from topics a, unit_instances b, unit_instance_occurrences c where a.topic_code=b.topic_topic_code and b.fes_unit_instance_code=c.fes_uins_instance_code and (lower(c.keywords) like :keyword or lower(c.long_description) like :keyword) and a.sp_visible = 'Y' and c.status = 'ACTIVE' and c.sp_visible = 'Y' order by c.long_description Asc . Bound with :keyword='%eso%'.
+in C:\xampp\htdocs\yii\testapp\protected\controllers\SiteController.php (93)
+in C:\xampp\htdocs\yii\testapp\index.php (13)
+2013/02/07 11:21:17 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[HY000]: General error: 923 OCIStmtExecute: ORA-00923: FROM keyword not found where expected
+ (ext\pdo_oci\oci_statement.c:148). The SQL statement executed was: select c.long_description || ' [' || 'Year: ' || c.calocc_occurrence_code ' ' || (CASE WHEN SUBSTR(c.fes_moa_code,1,2) = 'FT' THEN 'Full Time' WHEN SUBSTR(c.fes_moa_code,1,2) = 'UM' THEN '' ELSE 'Part Time' END) || ']' As label, c.uio_id As id from topics a, unit_instances b, unit_instance_occurrences c where a.topic_code=b.topic_topic_code and b.fes_unit_instance_code=c.fes_uins_instance_code and (lower(c.keywords) like :keyword or lower(c.long_description) like :keyword) and a.sp_visible = 'Y' and c.status = 'ACTIVE' and c.sp_visible = 'Y' order by c.long_description Asc . Bound with :keyword='%eso%'' in C:\xampp\htdocs\yii\framework\db\CDbCommand.php:528
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\CDbCommand.php(390): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\xampp\htdocs\yii\testapp\protected\controllers\SiteController.php(93): CDbCommand->queryAll()
+#2 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionSuggestCourse()
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(283): CController->run('suggestCourse')
+#7 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/suggestCou...')
+#8 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\yii\testapp\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/yii/testapp/index.php?r=site/suggestCourse&term=eso&_=1360232477489
+HTTP_REFERER=http://scna7005.swindon-college.ac.uk/yii/testapp/index.php?r=site/searchbb
+---
+2013/02/07 11:21:17 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[HY000]: General error: 923 OCIStmtExecute: ORA-00923: FROM keyword not found where expected
+ (ext\pdo_oci\oci_statement.c:148). The SQL statement executed was: select c.long_description || ' [' || 'Year: ' || c.calocc_occurrence_code ' ' || (CASE WHEN SUBSTR(c.fes_moa_code,1,2) = 'FT' THEN 'Full Time' WHEN SUBSTR(c.fes_moa_code,1,2) = 'UM' THEN '' ELSE 'Part Time' END) || ']' As label, c.uio_id As id from topics a, unit_instances b, unit_instance_occurrences c where a.topic_code=b.topic_topic_code and b.fes_unit_instance_code=c.fes_uins_instance_code and (lower(c.keywords) like :keyword or lower(c.long_description) like :keyword) and a.sp_visible = 'Y' and c.status = 'ACTIVE' and c.sp_visible = 'Y' order by c.long_description Asc . Bound with :keyword='%es%'.
+in C:\xampp\htdocs\yii\testapp\protected\controllers\SiteController.php (93)
+in C:\xampp\htdocs\yii\testapp\index.php (13)
+2013/02/07 11:21:17 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[HY000]: General error: 923 OCIStmtExecute: ORA-00923: FROM keyword not found where expected
+ (ext\pdo_oci\oci_statement.c:148). The SQL statement executed was: select c.long_description || ' [' || 'Year: ' || c.calocc_occurrence_code ' ' || (CASE WHEN SUBSTR(c.fes_moa_code,1,2) = 'FT' THEN 'Full Time' WHEN SUBSTR(c.fes_moa_code,1,2) = 'UM' THEN '' ELSE 'Part Time' END) || ']' As label, c.uio_id As id from topics a, unit_instances b, unit_instance_occurrences c where a.topic_code=b.topic_topic_code and b.fes_unit_instance_code=c.fes_uins_instance_code and (lower(c.keywords) like :keyword or lower(c.long_description) like :keyword) and a.sp_visible = 'Y' and c.status = 'ACTIVE' and c.sp_visible = 'Y' order by c.long_description Asc . Bound with :keyword='%es%'' in C:\xampp\htdocs\yii\framework\db\CDbCommand.php:528
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\CDbCommand.php(390): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\xampp\htdocs\yii\testapp\protected\controllers\SiteController.php(93): CDbCommand->queryAll()
+#2 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionSuggestCourse()
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(283): CController->run('suggestCourse')
+#7 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/suggestCou...')
+#8 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\yii\testapp\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/yii/testapp/index.php?r=site/suggestCourse&term=es&_=1360232477852
+HTTP_REFERER=http://scna7005.swindon-college.ac.uk/yii/testapp/index.php?r=site/searchbb
+---
+2013/02/07 11:21:38 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[HY000]: General error: 923 OCIStmtExecute: ORA-00923: FROM keyword not found where expected
+ (ext\pdo_oci\oci_statement.c:148). The SQL statement executed was: select c.long_description || ' [' || 'Year: ' || c.calocc_occurrence_code ' ' || (CASE WHEN SUBSTR(c.fes_moa_code,1,2) = 'FT' THEN 'Full Time' WHEN SUBSTR(c.fes_moa_code,1,2) = 'UM' THEN '' ELSE 'Part Time' END) || ']' As label, c.uio_id As id from topics a, unit_instances b, unit_instance_occurrences c where a.topic_code=b.topic_topic_code and b.fes_unit_instance_code=c.fes_uins_instance_code and (lower(c.keywords) like :keyword or lower(c.long_description) like :keyword) and a.sp_visible = 'Y' and c.status = 'ACTIVE' and c.sp_visible = 'Y' order by c.long_description Asc . Bound with :keyword='%es%'.
+in C:\xampp\htdocs\yii\testapp\protected\controllers\SiteController.php (93)
+in C:\xampp\htdocs\yii\testapp\index.php (13)
+2013/02/07 11:21:38 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[HY000]: General error: 923 OCIStmtExecute: ORA-00923: FROM keyword not found where expected
+ (ext\pdo_oci\oci_statement.c:148). The SQL statement executed was: select c.long_description || ' [' || 'Year: ' || c.calocc_occurrence_code ' ' || (CASE WHEN SUBSTR(c.fes_moa_code,1,2) = 'FT' THEN 'Full Time' WHEN SUBSTR(c.fes_moa_code,1,2) = 'UM' THEN '' ELSE 'Part Time' END) || ']' As label, c.uio_id As id from topics a, unit_instances b, unit_instance_occurrences c where a.topic_code=b.topic_topic_code and b.fes_unit_instance_code=c.fes_uins_instance_code and (lower(c.keywords) like :keyword or lower(c.long_description) like :keyword) and a.sp_visible = 'Y' and c.status = 'ACTIVE' and c.sp_visible = 'Y' order by c.long_description Asc . Bound with :keyword='%es%'' in C:\xampp\htdocs\yii\framework\db\CDbCommand.php:528
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\CDbCommand.php(390): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\xampp\htdocs\yii\testapp\protected\controllers\SiteController.php(93): CDbCommand->queryAll()
+#2 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionSuggestCourse()
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(283): CController->run('suggestCourse')
+#7 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/suggestCou...')
+#8 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\yii\testapp\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/yii/testapp/index.php?r=site/suggestCourse&term=es&_=1360232497915
+HTTP_REFERER=http://scna7005.swindon-college.ac.uk/yii/testapp/index.php?r=site/searchbb
+---
+2013/02/07 11:21:38 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[HY000]: General error: 923 OCIStmtExecute: ORA-00923: FROM keyword not found where expected
+ (ext\pdo_oci\oci_statement.c:148). The SQL statement executed was: select c.long_description || ' [' || 'Year: ' || c.calocc_occurrence_code ' ' || (CASE WHEN SUBSTR(c.fes_moa_code,1,2) = 'FT' THEN 'Full Time' WHEN SUBSTR(c.fes_moa_code,1,2) = 'UM' THEN '' ELSE 'Part Time' END) || ']' As label, c.uio_id As id from topics a, unit_instances b, unit_instance_occurrences c where a.topic_code=b.topic_topic_code and b.fes_unit_instance_code=c.fes_uins_instance_code and (lower(c.keywords) like :keyword or lower(c.long_description) like :keyword) and a.sp_visible = 'Y' and c.status = 'ACTIVE' and c.sp_visible = 'Y' order by c.long_description Asc . Bound with :keyword='%eso%'.
+in C:\xampp\htdocs\yii\testapp\protected\controllers\SiteController.php (93)
+in C:\xampp\htdocs\yii\testapp\index.php (13)
+2013/02/07 11:21:38 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[HY000]: General error: 923 OCIStmtExecute: ORA-00923: FROM keyword not found where expected
+ (ext\pdo_oci\oci_statement.c:148). The SQL statement executed was: select c.long_description || ' [' || 'Year: ' || c.calocc_occurrence_code ' ' || (CASE WHEN SUBSTR(c.fes_moa_code,1,2) = 'FT' THEN 'Full Time' WHEN SUBSTR(c.fes_moa_code,1,2) = 'UM' THEN '' ELSE 'Part Time' END) || ']' As label, c.uio_id As id from topics a, unit_instances b, unit_instance_occurrences c where a.topic_code=b.topic_topic_code and b.fes_unit_instance_code=c.fes_uins_instance_code and (lower(c.keywords) like :keyword or lower(c.long_description) like :keyword) and a.sp_visible = 'Y' and c.status = 'ACTIVE' and c.sp_visible = 'Y' order by c.long_description Asc . Bound with :keyword='%eso%'' in C:\xampp\htdocs\yii\framework\db\CDbCommand.php:528
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\CDbCommand.php(390): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\xampp\htdocs\yii\testapp\protected\controllers\SiteController.php(93): CDbCommand->queryAll()
+#2 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionSuggestCourse()
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(283): CController->run('suggestCourse')
+#7 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/suggestCou...')
+#8 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\yii\testapp\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/yii/testapp/index.php?r=site/suggestCourse&term=eso&_=1360232498291
+HTTP_REFERER=http://scna7005.swindon-college.ac.uk/yii/testapp/index.php?r=site/searchbb
+---
+2013/02/07 11:21:40 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[HY000]: General error: 923 OCIStmtExecute: ORA-00923: FROM keyword not found where expected
+ (ext\pdo_oci\oci_statement.c:148). The SQL statement executed was: select c.long_description || ' [' || 'Year: ' || c.calocc_occurrence_code ' ' || (CASE WHEN SUBSTR(c.fes_moa_code,1,2) = 'FT' THEN 'Full Time' WHEN SUBSTR(c.fes_moa_code,1,2) = 'UM' THEN '' ELSE 'Part Time' END) || ']' As label, c.uio_id As id from topics a, unit_instances b, unit_instance_occurrences c where a.topic_code=b.topic_topic_code and b.fes_unit_instance_code=c.fes_uins_instance_code and (lower(c.keywords) like :keyword or lower(c.long_description) like :keyword) and a.sp_visible = 'Y' and c.status = 'ACTIVE' and c.sp_visible = 'Y' order by c.long_description Asc . Bound with :keyword='%eso%'.
+in C:\xampp\htdocs\yii\testapp\protected\controllers\SiteController.php (93)
+in C:\xampp\htdocs\yii\testapp\index.php (13)
+2013/02/07 11:21:40 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[HY000]: General error: 923 OCIStmtExecute: ORA-00923: FROM keyword not found where expected
+ (ext\pdo_oci\oci_statement.c:148). The SQL statement executed was: select c.long_description || ' [' || 'Year: ' || c.calocc_occurrence_code ' ' || (CASE WHEN SUBSTR(c.fes_moa_code,1,2) = 'FT' THEN 'Full Time' WHEN SUBSTR(c.fes_moa_code,1,2) = 'UM' THEN '' ELSE 'Part Time' END) || ']' As label, c.uio_id As id from topics a, unit_instances b, unit_instance_occurrences c where a.topic_code=b.topic_topic_code and b.fes_unit_instance_code=c.fes_uins_instance_code and (lower(c.keywords) like :keyword or lower(c.long_description) like :keyword) and a.sp_visible = 'Y' and c.status = 'ACTIVE' and c.sp_visible = 'Y' order by c.long_description Asc . Bound with :keyword='%eso%'' in C:\xampp\htdocs\yii\framework\db\CDbCommand.php:528
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\CDbCommand.php(390): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\xampp\htdocs\yii\testapp\protected\controllers\SiteController.php(93): CDbCommand->queryAll()
+#2 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionSuggestCourse()
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(283): CController->run('suggestCourse')
+#7 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/suggestCou...')
+#8 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\yii\testapp\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/yii/testapp/index.php?r=site/suggestCourse&term=eso&_=1360232500657
+HTTP_REFERER=http://scna7005.swindon-college.ac.uk/yii/testapp/index.php?r=site/searchbb
+---
+2013/02/07 11:21:41 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[HY000]: General error: 923 OCIStmtExecute: ORA-00923: FROM keyword not found where expected
+ (ext\pdo_oci\oci_statement.c:148). The SQL statement executed was: select c.long_description || ' [' || 'Year: ' || c.calocc_occurrence_code ' ' || (CASE WHEN SUBSTR(c.fes_moa_code,1,2) = 'FT' THEN 'Full Time' WHEN SUBSTR(c.fes_moa_code,1,2) = 'UM' THEN '' ELSE 'Part Time' END) || ']' As label, c.uio_id As id from topics a, unit_instances b, unit_instance_occurrences c where a.topic_code=b.topic_topic_code and b.fes_unit_instance_code=c.fes_uins_instance_code and (lower(c.keywords) like :keyword or lower(c.long_description) like :keyword) and a.sp_visible = 'Y' and c.status = 'ACTIVE' and c.sp_visible = 'Y' order by c.long_description Asc . Bound with :keyword='%eso%'.
+in C:\xampp\htdocs\yii\testapp\protected\controllers\SiteController.php (93)
+in C:\xampp\htdocs\yii\testapp\index.php (13)
+2013/02/07 11:21:41 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[HY000]: General error: 923 OCIStmtExecute: ORA-00923: FROM keyword not found where expected
+ (ext\pdo_oci\oci_statement.c:148). The SQL statement executed was: select c.long_description || ' [' || 'Year: ' || c.calocc_occurrence_code ' ' || (CASE WHEN SUBSTR(c.fes_moa_code,1,2) = 'FT' THEN 'Full Time' WHEN SUBSTR(c.fes_moa_code,1,2) = 'UM' THEN '' ELSE 'Part Time' END) || ']' As label, c.uio_id As id from topics a, unit_instances b, unit_instance_occurrences c where a.topic_code=b.topic_topic_code and b.fes_unit_instance_code=c.fes_uins_instance_code and (lower(c.keywords) like :keyword or lower(c.long_description) like :keyword) and a.sp_visible = 'Y' and c.status = 'ACTIVE' and c.sp_visible = 'Y' order by c.long_description Asc . Bound with :keyword='%eso%'' in C:\xampp\htdocs\yii\framework\db\CDbCommand.php:528
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\CDbCommand.php(390): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\xampp\htdocs\yii\testapp\protected\controllers\SiteController.php(93): CDbCommand->queryAll()
+#2 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionSuggestCourse()
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(283): CController->run('suggestCourse')
+#7 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/suggestCou...')
+#8 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\yii\testapp\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/yii/testapp/index.php?r=site/suggestCourse&term=eso&_=1360232501723
+HTTP_REFERER=http://scna7005.swindon-college.ac.uk/yii/testapp/index.php?r=site/searchbb
+---
+2013/02/07 13:35:40 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[HY000]: General error: 979 OCIStmtExecute: ORA-00979: not a GROUP BY expression
+ (ext\pdo_oci\oci_statement.c:148). The SQL statement executed was: select c.uio_id As id, c.calocc_occurrence_code As year, c.fes_uins_instance_code As code, c.long_description As title, c.sp_can_enrol As enrol, c.sp_can_apply As apply, c.sp_can_enquire As enquire, c.ucas As ucas2, e.fes_source_finance As ucas, e.fes_user_12 As ucascode, llat.learning_aim_type_desc As qual, to_char(c.qual_start_date, 'DD MON YYYY') As sdate, to_char(c.qual_end_date, 'DD MON YYYY') As edate, to_char(c.fes_start_time,'HH24:MI')  As stime, to_char(c.fes_end_time,'HH24:MI')  As etime, c.fes_no_of_hours As hours, c.fes_day_of_week As days, c.fes_no_of_weeks As weeks, c.prosp_user_10 As type2, (CASE WHEN SUBSTR(c.fes_moa_code,1,2) = 'FT' THEN 'Full Time' ELSE 'Part Time' END) AS type, c.prosp_user_1 As content, c.prosp_user_2 As entry_req, c.prosp_user_3 As need_to_bring, c.prosp_user_4 As exam_info, c.prosp_user_5 As extra_costs, c.prosp_user_6 As other_info, c.prosp_user_7 As can_do_next, c.prosp_user_8 As how_to_apply, c.prosp_user_9 As qual_descr, a.fes_long_description || ' - ' || a.town || ' ' || a.uk_post_code_pt1 || ' ' || a.uk_post_code_pt2 As location, a.uk_post_code_pt1 || ' ' || a.uk_post_code_pt2 As postcode, sum(b.amount_payable) As fees from locations a, unit_instance_occurrences c, unit_instances e , uio_qual_aims uqa, fefc_qual_aims fqa, lad_learning_aim_types llat , fee_values b where a.location_code (+) = c.sloc_location_code and e.fes_unit_instance_code = c.fes_uins_instance_code and c.uio_id = b.uio_id (+) and uqa.funding_year = fqa.funding_year (+) and uqa.qual_code = fqa.qual_code (+) and fqa.qual_type = llat.learning_aim_type_code (+) and c.calocc_occurrence_code = uqa.CALOCC_CODE (+) and c.fes_uins_instance_code = uqa.unit_instance_code (+) and c.uio_id = :uio_id GROUP BY c.uio_id,e.fes_user_12,c.calocc_occurrence_code,c.fes_uins_instance_code,c.long_description,c.fes_moa_code,c.sp_can_enrol,c.sp_can_apply,c.sp_can_enquire,c.ucas,e.fes_source_finance,llat.learning_aim_type_desc,c.qual_start_date, c.qual_end_date,c.fes_start_time,c.fes_end_time,c.fes_day_of_week,c.fes_no_of_hours,c.fes_no_of_weeks,c.prosp_user_1,c.prosp_user_10,c.prosp_user_2,a.fes_long_description || ' - ' || a.town || ' ' || a.uk_post_code_pt1 || ' ' || a.uk_post_code_pt2,a.uk_post_code_pt1 || ' ' || a.uk_post_code_pt2 . Bound with :uio_id='284806'.
+in C:\xampp\htdocs\yii\testapp\protected\models\Course.php (291)
+in C:\xampp\htdocs\yii\testapp\protected\views\site\crsview.php (26)
+in C:\xampp\htdocs\yii\testapp\protected\controllers\SiteController.php (265)
+2013/02/07 13:35:40 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[HY000]: General error: 979 OCIStmtExecute: ORA-00979: not a GROUP BY expression
+ (ext\pdo_oci\oci_statement.c:148). The SQL statement executed was: select c.uio_id As id, c.calocc_occurrence_code As year, c.fes_uins_instance_code As code, c.long_description As title, c.sp_can_enrol As enrol, c.sp_can_apply As apply, c.sp_can_enquire As enquire, c.ucas As ucas2, e.fes_source_finance As ucas, e.fes_user_12 As ucascode, llat.learning_aim_type_desc As qual, to_char(c.qual_start_date, 'DD MON YYYY') As sdate, to_char(c.qual_end_date, 'DD MON YYYY') As edate, to_char(c.fes_start_time,'HH24:MI')  As stime, to_char(c.fes_end_time,'HH24:MI')  As etime, c.fes_no_of_hours As hours, c.fes_day_of_week As days, c.fes_no_of_weeks As weeks, c.prosp_user_10 As type2, (CASE WHEN SUBSTR(c.fes_moa_code,1,2) = 'FT' THEN 'Full Time' ELSE 'Part Time' END) AS type, c.prosp_user_1 As content, c.prosp_user_2 As entry_req, c.prosp_user_3 As need_to_bring, c.prosp_user_4 As exam_info, c.prosp_user_5 As extra_costs, c.prosp_user_6 As other_info, c.prosp_user_7 As can_do_next, c.prosp_user_8 As how_to_apply, c.prosp_user_9 As qual_descr, a.fes_long_description || ' - ' || a.town || ' ' || a.uk_post_code_pt1 || ' ' || a.uk_post_code_pt2 As location, a.uk_post_code_pt1 || ' ' || a.uk_post_code_pt2 As postcode, sum(b.amount_payable) As fees from locations a, unit_instance_occurrences c, unit_instances e , uio_qual_aims uqa, fefc_qual_aims fqa, lad_learning_aim_types llat , fee_values b where a.location_code (+) = c.sloc_location_code and e.fes_unit_instance_code = c.fes_uins_instance_code and c.uio_id = b.uio_id (+) and uqa.funding_year = fqa.funding_year (+) and uqa.qual_code = fqa.qual_code (+) and fqa.qual_type = llat.learning_aim_type_code (+) and c.calocc_occurrence_code = uqa.CALOCC_CODE (+) and c.fes_uins_instance_code = uqa.unit_instance_code (+) and c.uio_id = :uio_id GROUP BY c.uio_id,e.fes_user_12,c.calocc_occurrence_code,c.fes_uins_instance_code,c.long_description,c.fes_moa_code,c.sp_can_enrol,c.sp_can_apply,c.sp_can_enquire,c.ucas,e.fes_source_finance,llat.learning_aim_type_desc,c.qual_start_date, c.qual_end_date,c.fes_start_time,c.fes_end_time,c.fes_day_of_week,c.fes_no_of_hours,c.fes_no_of_weeks,c.prosp_user_1,c.prosp_user_10,c.prosp_user_2,a.fes_long_description || ' - ' || a.town || ' ' || a.uk_post_code_pt1 || ' ' || a.uk_post_code_pt2,a.uk_post_code_pt1 || ' ' || a.uk_post_code_pt2 . Bound with :uio_id='284806'' in C:\xampp\htdocs\yii\framework\db\CDbCommand.php:528
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\CDbCommand.php(408): CDbCommand->queryInternal('fetch', Array, Array)
+#1 C:\xampp\htdocs\yii\testapp\protected\models\Course.php(291): CDbCommand->queryRow()
+#2 C:\xampp\htdocs\yii\testapp\protected\views\site\crsview.php(26): Course->findCourseById2('284806')
+#3 C:\xampp\htdocs\yii\framework\web\CBaseController.php(127): require('C:\xampp\htdocs...')
+#4 C:\xampp\htdocs\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(783): CController->renderPartial('crsview', Array, true)
+#7 C:\xampp\htdocs\yii\testapp\protected\controllers\SiteController.php(265): CController->render('crsview', Array)
+#8 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionCrsview()
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(283): CController->run('crsview')
+#13 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/crsview')
+#14 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\yii\testapp\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/yii/testapp/index.php?r=site/crsview&id=284806&keyword=AAT+Level+2+Certificate+in+Accounting+%5Byear%3A+12%2F13-Full+Time%5D&v=bb
+HTTP_REFERER=http://scna7005.swindon-college.ac.uk/yii/testapp/index.php?r=site/searchbb&id=299463&keyword=ESOL+courses+%5Byear%3A+13%2F14%5D
+---
+2013/02/07 13:43:44 [error] [exception.CException] exception 'CException' with message 'Property "Course.need_to_bring" is not defined.' in C:\xampp\htdocs\yii\framework\base\CComponent.php:174
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\base\CModel.php(470): CComponent->__set('need_to_bring', NULL)
+#1 C:\xampp\htdocs\yii\framework\base\CComponent.php(153): CModel->setAttributes(Array)
+#2 C:\xampp\htdocs\yii\testapp\protected\models\Course.php(294): CComponent->__set('attributes', Array)
+#3 C:\xampp\htdocs\yii\testapp\protected\views\site\crsview.php(26): Course->findCourseById2('284806')
+#4 C:\xampp\htdocs\yii\framework\web\CBaseController.php(127): require('C:\xampp\htdocs...')
+#5 C:\xampp\htdocs\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(783): CController->renderPartial('crsview', Array, true)
+#8 C:\xampp\htdocs\yii\testapp\protected\controllers\SiteController.php(265): CController->render('crsview', Array)
+#9 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionCrsview()
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#12 C:\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(283): CController->run('crsview')
+#14 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/crsview')
+#15 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#16 C:\xampp\htdocs\yii\testapp\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/yii/testapp/index.php?r=site/crsview&id=284806&keyword=AAT+Level+2+Certificate+in+Accounting+%5Byear%3A+12%2F13-Full+Time%5D&v=bb
+HTTP_REFERER=http://scna7005.swindon-college.ac.uk/yii/testapp/index.php?r=site/searchbb&id=299463&keyword=ESOL+courses+%5Byear%3A+13%2F14%5D
+---
